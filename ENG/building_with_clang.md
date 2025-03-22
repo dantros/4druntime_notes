@@ -64,9 +64,9 @@ int add(int a, int b)
 }
 ```
 
-3. Compile each source file individually with commands like: `clang++ -c -o mylib.o mylib.cpp`. You should get a mylib.o binary object file.
-4. Generate the static library (objects file archive), with `llvm-ar r mylib.lib mylib.o`. Congratulations!, you got your first static library!.
-5. If you have more than one object file (*.o), just list all of them after the .lib.
+3. Compile each source file individually with commands like: `clang++ -c -o mylib.obj mylib.cpp`. You should get the `mylib.obj` binary object file.
+4. Generate the static library (objects file archive), with `llvm-ar r mylib.lib mylib.obj`. Congratulations!, you got your first static library!.
+5. If you have more than one object file (*.obj), just list all of them after the .lib.
 6. Most likely, you want to use your library in an executable program. Let's do it with a simple program:
 
 ```

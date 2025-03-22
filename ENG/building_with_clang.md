@@ -47,6 +47,7 @@ int main()
 
 ```
 //mylib.h
+#pragma once
 
 int add(int a, int b);
 ```
